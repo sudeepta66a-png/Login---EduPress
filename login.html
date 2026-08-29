@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EduPress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>EduPress</h1>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#courses">Courses</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-secondary active">Login</a>
+                    <a href="register.html" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Heading -->
+    <section class="page-heading">
+        <div class="container">
+            <h1>Login</h1>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Homepage</a> > <span>Login</span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="auth-wrapper">
+                <div class="auth-card">
+                    <h2>Login to Your Account</h2>
+                    
+                    <form id="loginForm" class="auth-form">
+                        <!-- Email or Username -->
+                        <div class="form-group">
+                            <label for="email">Email or Username</label>
+                            <input 
+                                type="text" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email or username"
+                                required
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="password-field">
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    name="password" 
+                                    placeholder="Enter your password"
+                                    required
+                                >
+                                <button 
+                                    type="button" 
+                                    class="password-toggle" 
+                                    data-toggle="password"
+                                    title="Toggle password visibility"
+                                >
+                                    <span class="eye-icon">👁️</span>
+                                </button>
+                            </div>
+                            <span class="error-message" id="passwordError"></span>
+                        </div>
+
+                        <!-- Remember Me -->
+                        <div class="form-group checkbox">
+                            <input 
+                                type="checkbox" 
+                                id="remember" 
+                                name="remember"
+                            >
+                            <label for="remember">Remember me</label>
+                        </div>
+
+                        <!-- Login Button -->
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+
+                        <p class="success-message" id="loginSuccess" style="display:none;"></p>
+                    </form>
+
+                    <!-- Additional Links -->
+                    <div class="auth-links">
+                        <a href="#" class="forgot-password">Lost your password?</a>
+                    </div>
+
+                    <div class="auth-divider">
+                        <span>Don't have an account?</span>
+                    </div>
+
+                    <a href="register.html" class="btn btn-secondary btn-block btn-outline">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>About EduPress</h5>
+                    <p>We're committed to providing high-quality education to learners worldwide</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#courses">Courses</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Account</h5>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduPress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
